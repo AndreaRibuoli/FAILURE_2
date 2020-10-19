@@ -13,7 +13,7 @@ Using `VERBOSE('Y')` option will help identifying the issue:
 Host: api.github.com                                                         
 User-Agent: curl/0007.0073.0000                                              
 Accept: application/vnd.github.v3.raw                                        
-Authorization: token 1d766b1154acfdae93f1c5cdc195c142732822a7                
+Authorization: token xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                
 * old SSL session ID is stale, removing                                      
 * Mark bundle as not supporting multiuse                                     
 < HTTP/1.1 404 Not Found                                                     
