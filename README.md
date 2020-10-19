@@ -1,5 +1,5 @@
 # FAILURE_2
-Missing BUILD 
+Missing BUILD CL source 
 
 When installed with PASERIE/INSTALL will fail because of missing BUILD CL source file.
 The installer will test compilation for an ILE CL and, should it fail, for an OPM CL.
