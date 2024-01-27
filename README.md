@@ -22,7 +22,7 @@ Authorization: token xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Alternatively you can use the `DEVOPT('Y')` option.
 
 ```
-PASERIE/INSTALL GIT_USER(AndreaRibuoli) PACKAGEN(FAILURE_2) DEVOPT('Y')
+PASERIE/INSTALL REPO_OWNER(AndreaRibuoli) PACKAGEN(FAILURE_2) DEVOPT('Y')
 ```
 
 Two spools will be generated (ILE CL, OPM CL) complaining with invalid CL source:
