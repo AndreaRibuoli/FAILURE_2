@@ -22,10 +22,10 @@ Authorization: token xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Alternatively you can use the `DEVOPT('Y')` option.
 
 ```
-PASERIE/INSTALL REPO_OWNER(AndreaRibuoli) REPOSITORY(FAILURE_2) DEVOPT('Y')
+PASERIE/INSTALL REPO_OWNER(AndreaRibuoli) REPOSITORY(FAILURE_2) DEVOPT('B')
 ```
 
-Two spools will be generated (ILE CL, OPM CL) complaining with invalid CL source:
+A spool file will be generated complaining with invalid CL source:
 
 ```
       1- {                                                                 
@@ -36,6 +36,6 @@ Two spools will be generated (ILE CL, OPM CL) complaining with invalid CL source
 * CPD0018 30  String 'FOUND",   ' contains a character that is not valid.  
 ```
 
-The content is actually returned as text that gets saved as CL source failing during compilation... (`{ "message": "Not Found", ...`).
-
+The content is actually the result of a failure during compilation:
+the source in `QTEMP/QCLSRC(BUILD)` is filled with the JSON error message from GitHub API.
 
